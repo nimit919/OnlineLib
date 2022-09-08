@@ -1,0 +1,12 @@
+<?php
+	session_start();
+	if(isset($_SESSION['aid']))
+	{
+		unset($_SESSION['aid']);
+	}
+	elseif(isset($_SESSION['id']))
+	{
+		unset($_SESSION['id']);
+	}
+	header("location:index.php");
+?>
